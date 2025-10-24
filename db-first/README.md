@@ -13,12 +13,12 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 - km:
 - year:
 - color:
-- interior:
 - interior-color:
-- seat-number:
+- interior-type:
+- seat:
 - doors-number:
-- owners-number:
-- optionals
-- 
+- past-owners:
+- optionals:
+- note:
  
 
