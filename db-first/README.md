@@ -3,22 +3,24 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 ## Table Name: (cars)
 
-- id:
-- type:
-- name:
-- brand: 
-- motor:
-- transmission:
-- fuel:
-- km:
-- year:
-- color:
-- interior-color:
-- interior-type:
-- seat:
-- doors-number:
-- past-owners:
-- optionals:
-- note:
+- id: NUMBER INT PRIMARY_KEY AI UNIQUE 
+- type: STRING VARCHAR(13) NULL
+- name: STRING VARCHAR(35) NOT-NULL
+- brand: STRING VARCHAR(25) NOT-NULL
+- motor-CC: NUMBER FLOAT(2, 1) NOT-NULL
+- transmission: STRING CHAR(3) NULL
+- gear: NUMBER TINYINT NOT-NULL
+- fuel: STRING VARCHAR(10) NOT-NULL
+- km: NUMBER MEDIUMINT UNSIGNED NOT-NULL
+- PRICE: NUMBER MEDIUMINT UNSIGNED NOT-NULL
+- year: YEAR NOT-NULL
+- color: STRING VARCHAR(25) NOT-NULL
+- interior-color: STRING VARCHAR(15) NULL
+- interior-material: STRING VARCHAR(15) NULL
+- seat: NUMBER TINYINT NULL
+- doors-number: NUMBER TINYINT NOT-NULL
+- past-owners: NUMBER TINYINT NULL
+- optionals: STRING TEXT NULL
+- note: STRING TEXT NULL
  
 
